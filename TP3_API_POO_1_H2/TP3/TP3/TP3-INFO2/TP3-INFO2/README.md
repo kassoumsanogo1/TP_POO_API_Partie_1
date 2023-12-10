@@ -1,8 +1,9 @@
 ### TP3: 1/2 Réalisation d'une application Web avec Spring Boot
 ### Utilisant H2 comme base de donnée
-### Regarder dans le fichier TP_API_POO_2 pour voir l'utilisation avec MySQL.
+### Regarder dans le fichier TP_API_POO_1_MySQL pour voir l'utilisation avec MySQL.
 ### J'ai ajouté des captures d'écran dans le fichier capture test
-### Mon server est configuré sur le port 9595
+
+Lien Github partie 1 : https://github.com/kassoumsanogo1/TP_POO_API_Partie_1.git 
 
 ### Description Succincte des dépendances dans pom.xml 
 
@@ -108,6 +109,8 @@ public class WebConfig implements WebMvcConfigurer {
 	>link rel="stylesheet" href="/webjars/bootstrap/5.3.0/css/bootstrap.min.css"< dans le head
 	et >script src="/webjars/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script< dans le body
 - Sauvegarder Tout et Redémarrer mon application
+
+### La partie 2 de mon projet avec les API ETALAB et METEOCONCEPT se trouve dans l'autre Fichier TP_POO_API_Partie_2 
 
 
 

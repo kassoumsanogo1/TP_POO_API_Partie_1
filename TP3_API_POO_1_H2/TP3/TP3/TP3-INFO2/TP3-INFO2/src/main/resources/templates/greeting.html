@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Accueil</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body class="bg-light d-flex align-items-center vh-100">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="mb-4">Utilisation de H2 comme base de donnée !</h1>
+            <h1 class="mb-4">Bienvenue sur la page d'accueil greeting</h1>
+            <p th:text="'Bonjour et Bienvenue dans : ' + ${nomTemplate} + ' !'" class="mb-4"></p>
+        </div>
+
+        <nav class="mt-5">
+            <ul class="list-unstyled">
+                <li><a th:href="@{/addresses}" class="btn btn-primary">Cliquez-ici</a></li>
+                <li><a>pour naviguer vers la page des adresses</a></li>
+            </ul>
+        </nav>
+
+        <div class="mt-5">
+            <h2 class="text-center">Bootstrap Test</h2>
+            <div class="alert alert-success mt-4" role="alert">
+                Ceci est une alerte de réussite utilisant Bootstrap !
+            </div>
+        </div>
+    </div>
+</body>
+</html>

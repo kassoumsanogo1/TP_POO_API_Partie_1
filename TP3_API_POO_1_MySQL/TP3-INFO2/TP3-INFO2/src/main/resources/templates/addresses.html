@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Adresses</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <h1 class="mb-4">Utilisation de MySQL sur Wamp comme base de donée !</h1>
+
+    <h1 class="mb-4">Les différentes adresses et les auteurs dans la base sont :</h1>
+
+    <ul class="list-group">
+        <li th:each="address : ${allAddresses}" class="list-group-item">
+            <span th:text="${address.auteur}"></span>
+            <br/>
+            <span th:text="${address.content}"></span>
+        </li>
+    </ul>
+
+    <nav class="mt-4">
+        <ul class="list-unstyled">
+            <li><a th:href="@{/greeting}" class="btn btn-primary">Cliquez-ici</a></li>
+            <li><a>pour naviguer vers la page d'accueil</a></li>
+        </ul>
+    </nav>
+</div>
+
+</body>
+</html>
